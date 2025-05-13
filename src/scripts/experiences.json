@@ -1,0 +1,152 @@
+[
+  {
+    "titre": "Bac Scientifique",
+    "entreprise": "Lycée Hilaire de Chardonnet",
+    "dates": "Juin 2014",
+    "lieu": "Chalon-sur-Saône",
+    "mission": "",
+    "type": "",
+    "statut": "Formation",
+    "secteur": "scientifique"
+  },
+  {
+    "titre": "Classe préparatoire économique option scientifique (ECS)",
+    "entreprise": "Lycée du Parc",
+    "dates": "Septembre 2014 à Juin 2016",
+    "lieu": "Lyon",
+    "mission": "",
+    "type": "bac+2",
+    "statut": "Formation",
+    "secteur": "scientifique"
+  },
+  {
+    "titre": "Programme Grande École",
+    "entreprise": "TBS Education",
+    "dates": "Septembre 2016 à Juin 2020",
+    "lieu": "Toulouse",
+    "mission": "-",
+    "type": "master",
+    "statut": "Formation",
+    "secteur": "Management, Finance, Marketing, Culture"
+  },
+  {
+    "titre": "Master 1 Finance",
+    "entreprise": "TBS Education",
+    "dates": "2017-2018",
+    "lieu": "Toulouse",
+    "mission": "-",
+    "type": "Master 1",
+    "statut": "Formation",
+    "secteur": "Finance"
+  },
+  {
+    "titre": "Master 2 Management des Activités Culturelles et Créatives",
+    "entreprise": "TBS Education",
+    "dates": "2019-2020",
+    "lieu": "Toulouse",
+    "mission": "-",
+    "type": "Master 2",
+    "statut": "Formation",
+    "secteur": "Culture, Management"
+  },
+  {
+    "titre": "Échange universitaire",
+    "entreprise": "University of Amsterdam",
+    "dates": "2019",
+    "lieu": "Amsterdam",
+    "mission": "-",
+    "type": "MSc",
+    "statut": "Formation",
+    "secteur": "Culture, Développement Durable"
+  },
+  {
+    "titre": "Responsable du pôle activations publicitaires",
+    "entreprise": "SensCritique",
+    "dates": "2023 à 2024",
+    "lieu": "Paris",
+    "mission": [
+      "Création d’un pôle activations publicitaires et définition des objectifs du pôle",
+      "Analyse des performances et identification des opportunités d'optimisation",
+      "Conception et implémentation de nouveaux processus de gestion",
+      "Formation et management de l’équipe"
+    ],
+    "type": "CDI",
+    "statut": "Expérience professionnelle",
+    "secteur": "Publicité digitale"
+  },
+  {
+    "titre": "Coordinatrice des activations publicitaires",
+    "entreprise": "SensCritique",
+    "dates": "2021 à 2023",
+    "lieu": "Paris",
+    "mission": [
+      "Gestion des campagnes publicitaires digitales et sociales (nombre de campagnes multiplié par 3)",
+      "Trafic management des campagnes publicitaires (20 campagnes/mois)",
+      "Organisation d'avant-premières et projections spéciales (6 événements/an)",
+      "Coordination de la production des contenus vidéo"
+    ],
+    "type": "CDI",
+    "statut": "Expérience professionnelle",
+    "secteur": "Publicité digitale"
+  },
+  {
+    "titre": "Responsable digital et licences internationales",
+    "entreprise": "IDEAT Édition",
+    "dates": "2021",
+    "lieu": "Paris",
+    "mission": [
+      "Pilotage des productions digitales, suivi des KPIs et reporting client",
+      "Programmation de push sponsorisés sur les réseaux sociaux",
+      "Suivi du CA, des marges et management d’un·e alternant·e",
+      "Gestion des contenus des licences internationales des magazines"
+    ],
+    "type": "CDD",
+    "statut": "Expérience professionnelle",
+    "secteur": "Médias, Digital"
+  },
+  {
+    "titre": "Assistante responsable partenariats culture et médias",
+    "entreprise": "mk2 agency",
+    "dates": "Juillet 2018 à Décembre 2018",
+    "lieu": "Paris",
+    "mission": [
+      "Prospection et rendez-vous clients avec les musées, fondations, labels, éditeurs, arts vivants, etc.",
+      "Mise en place et suivi des partenariats en salles print, digital et social",
+      "Conception et gestion d’opérations spéciales comme des masterclass carte blanche",
+      "Reporting financier et suivi comptable (facturation) et juridique (relecture des conventions)"
+    ],
+    "type": "stage",
+    "statut": "Expérience professionnelle",
+    "secteur": "Publicité, Culture"
+  },
+  {
+    "titre": "Assistante responsable partenariats culture et médias",
+    "entreprise": "mk2 agency",
+    "dates": "Janvier 2019",
+    "lieu": "Paris",
+    "mission": [
+      "Prospection et rendez-vous clients avec les musées, fondations, labels, éditeurs, arts vivants, etc.",
+      "Mise en place et suivi des partenariats en salles print, digital et social",
+      "Conception et gestion d’opérations spéciales comme des masterclass carte blanche",
+      "Reporting financier et suivi comptable (facturation) et juridique (relecture des conventions)"
+    ],
+    "type": "CDD",
+    "statut": "Expérience professionnelle",
+    "secteur": "Publicité, Culture"
+  },
+  {
+    "titre": "Cheffe de publicité",
+    "entreprise": "fisheye",
+    "dates": "Janvier à Juin 2020",
+    "lieu": "Paris",
+    "mission": [
+      "Création d’offres publicitaires et rédaction de recommandations commerciales",
+      "Gestion et reporting des campagnes print, digital et social",
+      "Participation aux opérations spéciales : analyse marketing, sourcing et coordination",
+      "Création d’une newsletter BtoB sur l’actualité du groupe"
+    ],
+    "type": "stage",
+    "statut": "Expérience professionnelle",
+    "secteur": "Publicité, Médias"
+  }
+]
