@@ -1,8 +1,14 @@
 :root {
   --gray-5: #fcfefe;
   --gray-10: #f4f4f4;
+  --gray-20: #e0e0e0;
+  --gray-40: #a8a8a8;
+  --gray-50: #8d8d8d;
+  --gray-60: #6f6f6f;
+  --gray-80: #393939;
   --gray-90: #262626;
   --yellow: #ffff00;
+  --light-orange: #ffa791;
   --orange: #ff3300;
   --rouge: #ff0000;
   --vert-jaune: #ccff33;
@@ -195,8 +201,15 @@ main {
   font-size: 2rem;
 }
 .about p {
+  font-family: "Spectral", serif;
+  font-style: italic;
   font-size: 2rem;
   margin: 0;
+}
+
+.about span{
+  color: var(--orange);
+  font-weight:500
 }
 
 /* Skills
@@ -210,17 +223,69 @@ main {
 }
 .skills-section h2 {
   align-self: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills-section h2 span {
+  font-style: normal;
 }
 
 .skills-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
-  border: 0.1px solid var(--gray-90);
   border-radius: 32px;
-  padding: 2rem;
+  margin: 0 3rem;
+  background-color: var(--gray-10);
+  padding: 3rem;
 }
+
+/*Btn filtres skills*/
+.skills-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  border: 0.5px solid var(--gray-90);
+  border-radius: 32px;
+  background-color: inherit;
+  color: inherit;
+  padding: 0.4rem 0.7rem;
+  font-family: "Wotfard", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.btn:hover {
+  color: var(--orange);
+  background-color: var(--light-orange);
+  border: none;
+  transform: scale(1.1);
+  transition: 100ms;
+  font-weight: bold;
+}
+
+.activeBtn,
+.activeBtn:hover {
+  color: var(--gray-10);
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+}
+
+/*dark mode*/
+.dark .skills-container {
+  background-color: var(--gray-80);
+}
+
+.dark .btn {
+  border: none;
+}
+
 /*Organisation des skills*/
 .skills-container div {
   display: flex;

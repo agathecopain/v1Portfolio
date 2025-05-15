@@ -46,7 +46,7 @@
     "categorie": "Développement web",
     "niveau": "Débutante",
     "commentaire": "Requêtes simples, jointures, modélisation",
-    "svg":""
+    "svg": ""
   },
   {
     "nom": "Git",
@@ -67,80 +67,91 @@
     "categorie": "Outils",
     "niveau": "Débutante",
     "commentaire": "Commandes de base, navigation, gestion fichiers",
-    "svg":""
+    "svg": ""
   },
   {
     "nom": "Optimisation de process",
     "categorie": "Gestion de projet",
     "niveau": "Confirmée",
     "commentaire": "Automatisation, documentation, amélioration continue",
-    "svg":""
+    "svg": ""
   },
   {
     "nom": "Relation client",
     "categorie": "Gestion de projet",
     "niveau": "Confirmée",
-    "commentaire": "Recueil des besoins, échanges réguliers, gestion des retours"
+    "commentaire": "Recueil des besoins, échanges réguliers, gestion des retours",
+    "svg": ""
   },
   {
     "nom": "Rédaction de spécifications",
     "categorie": "Gestion de projet",
     "niveau": "Confirmée",
-    "commentaire": "Traduction fonctionnelle/technique, suivi de livrables"
+    "commentaire": "Traduction fonctionnelle/technique, suivi de livrables",
+    "svg": ""
   },
   {
     "nom": "Conduite de projet",
     "categorie": "Gestion de projet",
     "niveau": "Confirmée",
-    "commentaire": "Planification, jalons, coordination d'équipe"
+    "commentaire": "Planification, jalons, coordination d'équipe",
+    "svg": ""
   },
   {
     "nom": "Animation de réunions",
     "categorie": "Gestion de projet",
     "niveau": "Confirmée",
-    "commentaire": "Préparation, ordre du jour, compte-rendu"
+    "commentaire": "Préparation, ordre du jour, compte-rendu",
+    "svg": ""
   },
   {
     "nom": "Transmission de savoirs",
     "categorie": "Gestion de projet",
     "niveau": "Confirmée",
-    "commentaire": "Mentorat, documentation, pédagogie"
+    "commentaire": "Mentorat, documentation, pédagogie",
+    "svg": ""
   },
   {
     "nom": "Management d'équipe",
     "categorie": "Gestion de projet",
     "niveau": "Confirmée",
-    "commentaire": "Encadrement de 2 personnes, répartition des tâches, montée en compétence"
+    "commentaire": "Encadrement de 2 personnes, répartition des tâches, montée en compétence",
+    "svg": ""
   },
   {
     "nom": "Responsabilité opérationnelle",
     "categorie": "Gestion de projet",
     "niveau": "Confirmée",
-    "commentaire": "Pilotage du pôle publicité digitale, prise de décision stratégique"
+    "commentaire": "Pilotage du pôle publicité digitale, prise de décision stratégique",
+    "svg": ""
   },
   {
     "nom": "Refonte de process",
     "categorie": "Gestion de projet",
     "niveau": "Confirmée",
-    "commentaire": "Audit, restructuration des méthodes de gestion, documentation et mise en œuvre"
+    "commentaire": "Audit, restructuration des méthodes de gestion, documentation et mise en œuvre",
+    "svg": ""
   },
   {
     "nom": "Publicité digitale",
     "categorie": "Marketing digital",
     "niveau": "Confirmée",
-    "commentaire": "Campagnes efficaces via Meta Ads, Google Ads"
+    "commentaire": "Campagnes efficaces via Meta Ads, Google Ads",
+    "svg": ""
   },
   {
     "nom": "Tracking & Analytics",
     "categorie": "Marketing digital",
     "niveau": "Confirmée",
-    "commentaire": "Mise en place de pixels, analyse via Google Analytics"
+    "commentaire": "Mise en place de pixels, analyse via Google Analytics",
+    "svg": ""
   },
   {
     "nom": "Emailing",
     "categorie": "Marketing digital",
     "niveau": "Confirmée",
-    "commentaire": "Outils comme Brevo, ciblage, taux d’ouverture"
+    "commentaire": "Outils comme Brevo, ciblage, taux d’ouverture",
+    "svg": ""
   },
   {
     "nom": "CMS Wordpress",
@@ -174,36 +185,42 @@
     "nom": "Autonomie",
     "categorie": "Soft skills",
     "niveau": "Confirmée",
-    "commentaire": "Travail en autonomie sur des projets complexes"
+    "commentaire": "Travail en autonomie sur des projets complexes",
+    "svg": ""
   },
   {
     "nom": "Rigueur",
     "categorie": "Soft skills",
     "niveau": "Confirmée",
-    "commentaire": "Respect des délais, qualité des livrables"
+    "commentaire": "Respect des délais, qualité des livrables",
+    "svg": ""
   },
   {
     "nom": "Curiosité",
     "categorie": "Soft skills",
     "niveau": "Confirmée",
-    "commentaire": "Veille technologique, apprentissage continu"
+    "commentaire": "Veille technologique, apprentissage continu",
+    "svg": ""
   },
   {
     "nom": "Pédagogie",
     "categorie": "Soft skills",
     "niveau": "Confirmée",
-    "commentaire": "Transmission claire, écoute active"
+    "commentaire": "Transmission claire, écoute active",
+    "svg": ""
   },
   {
     "nom": "Travail en équipe",
     "categorie": "Soft skills",
     "niveau": "Confirmée",
-    "commentaire": "Collaboration interdisciplinaire, communication fluide"
+    "commentaire": "Collaboration interdisciplinaire, communication fluide",
+    "svg": ""
   },
   {
     "nom": "Prise d’initiative",
     "categorie": "Soft skills",
     "niveau": "Confirmée",
-    "commentaire": "Proposition d’idées, lancement d’améliorations"
+    "commentaire": "Proposition d’idées, lancement d’améliorations",
+    "svg": ""
   }
 ]

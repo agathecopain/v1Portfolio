@@ -58,18 +58,59 @@ window.onload = () => {
   toggleBtn(savedTheme);
 };
 
-//intégration compétences
+//intégration compétences-------------------------------------------
+
+//filter
+const skillsWebBtn = document.getElementById(`skills-web-btn`);
+const skillsProjectBtn = document.getElementById(`skills-projectmgmt-btn`);
+const skillsMarketingBtn = document.getElementById(`skills-marketing-btn`);
+
 fetch(`src/scripts/skills.json`)
   .then((response) => response.json())
   .then((skills) => {
-    generateSkills(skills);
+    const defaultSkills = skills.filter((e) =>
+      e.categorie.includes(`Développement web`)
+    );
+    generateSkills(defaultSkills);
+    skillsWebBtn.addEventListener("click", () => {
+      const filteredSkillsDevWeb = skills.filter((e) =>
+        e.categorie.includes(`Développement web`)
+      );
+      generateSkills(filteredSkillsDevWeb);
+      skillsWebBtn.classList.add("activeBtn");
+      skillsProjectBtn.classList.remove("activeBtn");
+      skillsMarketingBtn.classList.remove("activeBtn");
+    });
+    skillsProjectBtn.addEventListener("click", () => {
+      const filteredSkillsPM = skills.filter((e) =>
+        e.categorie.includes(`Gestion de projet`)
+      );
+      generateSkills(filteredSkillsPM);
+      skillsProjectBtn.classList.add("activeBtn");
+      skillsWebBtn.classList.remove("activeBtn");
+      skillsMarketingBtn.classList.remove("activeBtn");
+    });
+    skillsMarketingBtn.addEventListener("click", () => {
+      const filteredSkillsMarket = skills.filter((e) =>
+        e.categorie.includes(`Marketing digital`)
+      );
+      generateSkills(filteredSkillsMarket);
+      skillsMarketingBtn.classList.add("activeBtn");
+      skillsProjectBtn.classList.remove("activeBtn");
+      skillsWebBtn.classList.remove("activeBtn");
+    });
+    generateSkills(filteredSkills);
   })
   .catch((error) => {
     console.error(error);
   });
 
+//hover des boutons
+
+//fonction pour injecter les skills
 const containerSkills = document.getElementById(`skills-container`);
 function generateSkills(el) {
+  containerSkills.innerHTML = "";
   el.forEach((skill) => {
     const divSkills = document.createElement(`div`);
     divSkills.innerHTML = `
