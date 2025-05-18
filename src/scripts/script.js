@@ -72,6 +72,9 @@ fetch(`src/scripts/skills.json`)
       e.categorie.includes(`Développement web`)
     );
     generateSkills(defaultSkills);
+    skillsWebBtn.classList.add("activeBtn");
+    skillsProjectBtn.classList.remove("activeBtn");
+    skillsMarketingBtn.classList.remove("activeBtn");
     skillsWebBtn.addEventListener("click", () => {
       const filteredSkillsDevWeb = skills.filter((e) =>
         e.categorie.includes(`Développement web`)
@@ -99,7 +102,6 @@ fetch(`src/scripts/skills.json`)
       skillsProjectBtn.classList.remove("activeBtn");
       skillsWebBtn.classList.remove("activeBtn");
     });
-    generateSkills(filteredSkills);
   })
   .catch((error) => {
     console.error(error);
@@ -114,7 +116,7 @@ function generateSkills(el) {
   el.forEach((skill) => {
     const divSkills = document.createElement(`div`);
     divSkills.innerHTML = `
-    <h3>${skill.svg}${skill.nom.toUpperCase()}</h3>
+    <h3>${skill.svg}${skill.nom}</h3>
     <p>${skill.niveau}</p>
     <p>${skill.commentaire}</p>`;
     containerSkills.appendChild(divSkills);
