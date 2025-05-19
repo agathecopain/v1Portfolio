@@ -153,6 +153,11 @@ header button {
   justify-content: flex-end;
 }
 
+/*réseaux sociaux responsive-------------------------------------------------*/
+.socialmedia-responsiveBar {
+  display: none;
+}
+
 main {
   grid-area: main;
 }
@@ -424,12 +429,50 @@ footer {
   header {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
+
+  .header-right {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
   .responsive-wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0.5rem;
     align-items: center;
   }
+
+  .socialmedia-responsiveBar {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  .socialmedia-responsiveBar a{
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .socialmedia-responsiveBar a svg {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .socialmedia-bar {
+    display: none;
+  }
+
   .menu-burger {
     cursor: pointer;
     display: block;
