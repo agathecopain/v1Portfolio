@@ -17,7 +17,7 @@
   <body>
     <header>
       <h2>A.B</h2>
-      <nav>
+      <nav class="menu" id="menu">
         <div class="topnav">
           <a href="#about">Présentation</a>
           <a href="#skills">Compétences</a>
@@ -26,11 +26,18 @@
           <a href="#contact">Contact</a>
         </div>
       </nav>
-      <button
-        class="theme-toggle"
-        onclick="toggleTheme()"
-        id="theme-toggle"
-      ></button>
+      <div class="responsive-wrapper">
+          <button id="menuBurger" class="menu-burger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="chevron-compact-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67"/>
+            </svg>Menu
+          </button>
+        <button
+          class="theme-toggle"
+          onclick="toggleTheme()"
+          id="theme-toggle"
+        ></button>
+      </div>
     </header>
     <main>
       <div class="marquee-container">
@@ -117,13 +124,15 @@
                 J’adore apprendre et créer - récemment sur le <span>web</span>,
                 et avant cela en <span>bricolant, cousant ou jardinant</span>.
                 J’aime le <span>cinéma</span> et les vide-greniers. Le week-end,
-                je pars en <span>randonnée</span>, je joue un peu au
-                <span>foot</span> et j’apprends à <span>surfer</span>.
+                je pars en
+                <span>randonnée <img src="assets/rando.jpg" alt="" /></span>, je
+                joue un peu au <span>foot</span> et j’apprends à
+                <span>surfer</span>.
               </p>
             </div>
           </div>
           <div id="skills" class="skills-section">
-            <div id="title-container">
+            <div class="title-container">
               <h2><span> ⋆⋅☆⋅⋆ ── </span>Compétences<span> ── ⋆⋅☆⋅⋆ </span></h2>
             </div>
             <div class="skills-wrapper">
@@ -140,8 +149,13 @@
               </div>
               <div class="skills-container" id="skills-container"></div>
             </div>
-            <div class="experiences-section" id="experience"></div>
-            <h2>Mon parcours</h2>
+          </div>
+          <div class="experiences-section" id="experience">
+            <div class="title-container">
+              <h2>
+                <span> ⋆⋅☆⋅⋆ ── </span>Mon parcours<span> ── ⋆⋅☆⋅⋆ </span>
+              </h2>
+            </div>
             <div id="experiences-container"></div>
           </div>
         </div>

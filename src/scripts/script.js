@@ -58,6 +58,18 @@ window.onload = () => {
   toggleBtn(savedTheme);
 };
 
+//menu burger-------------------------------------------------------
+
+const menuBurger = document.getElementById(`menuBurger`);
+const nav = document.getElementById(`menu`);
+const chevron = document.querySelector(`.chevron-compact-down`);
+menuBurger.addEventListener("click", () => {
+  nav.classList.toggle(`open`);
+  const currentMenu = nav.className;
+  const isOpen = currentMenu.includes(`open`);
+  chevron.style.transform = isOpen ? "rotate(180deg)" : "rotate(0deg)";
+});
+
 //intégration compétences-------------------------------------------
 
 //filter

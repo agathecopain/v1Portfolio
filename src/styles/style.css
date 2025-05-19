@@ -90,7 +90,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-  overflow: hidden;
+  /*overflow: hidden;*/
   backdrop-filter: blur(10px);
   height: 5rem;
   margin-bottom: 1rem;
@@ -127,6 +127,7 @@ nav {
   font-size: 1rem;
   color: inherit;
   position: relative;
+  white-space: nowrap;
 }
 
 header button {
@@ -137,6 +138,21 @@ header button {
   margin: 0;
   padding: 0.75rem;
 }
+
+/* Menu bruger---------------------------------------------------------------*/
+.menu-burger {
+  display: none;
+}
+
+.responsive-wrapper {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 main {
   grid-area: main;
 }
@@ -211,6 +227,16 @@ main {
 .about span {
   color: var(--orange);
   font-weight: 500;
+  cursor: pointer;
+}
+
+.about span img {
+  display: none;
+}
+
+.about img:hover {
+  display: contents;
+  position: absolute;
 }
 
 /* Skills
@@ -218,8 +244,7 @@ main {
 .skills-section {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0 6rem;
+  margin: 0 6rem 3rem;
   scroll-margin-top: 8rem;
 }
 
@@ -228,7 +253,7 @@ main {
   align-self: center;
 }
 
-#title-container {
+.title-container {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   gap: 12px;
@@ -238,8 +263,8 @@ main {
 }
 
 /*ligne noire responsive*/
-.skills-section #title-container::before,
-#title-container::after {
+.skills-section .title-container::before,
+.title-container::after {
   content: "";
   border-top: 2px solid;
   color: inherit;
@@ -333,12 +358,12 @@ main {
   margin: 0;
 }
 
-.skills-container div p:nth-child(2){
+.skills-container div p:nth-child(2) {
   font-size: 0.875rem;
   font-weight: 600;
 }
 
-.skills-container div p:nth-child(3){
+.skills-container div p:nth-child(3) {
   font-size: 0.875rem;
   padding: 0;
 }
@@ -346,8 +371,34 @@ main {
 /* Experiences
 ------------------------------------------------------------------------*/
 .experiences-section {
-  padding: 0 6rem;
+  margin: 0 6rem 3rem;
   scroll-margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/*titre experiences */
+.experiences-section h2 {
+  align-self: center;
+}
+
+.title-container {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding: 0 3rem;
+}
+
+/*ligne noire responsive*/
+.experiences-section .title-container::before,
+.title-container::after {
+  content: "";
+  border-top: 2px solid;
+  color: inherit;
+  display: block;
+  height: 1px;
 }
 
 /* Footer
@@ -359,7 +410,7 @@ footer {
 /* MEDIA QUERIES
 ------------------------------------------------------------------------*/
 /* large screen */
-@media (min-width: 1200px) and (max-width: 1440px) {
+@media (min-width: 1281px) and (max-width: 1440px) {
   header {
     display: grid;
     grid-template-columns: 1fr 4fr 0.5fr;
@@ -368,8 +419,70 @@ footer {
     padding: 0 5rem;
   }
 }
+/*menu burger-----------------------------------------------------------*/
+@media (max-width: 999px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+  .responsive-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .menu-burger {
+    cursor: pointer;
+    display: block;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    padding: 0.5rem 0.65rem;
+    margin: 0;
+    border-radius: 0.75rem;
+    border: none;
+    font-size: 1rem;
+    color: var(--gray-10);
+    background-color: var(--orange);
+  }
 
-@media (min-width: 1000px) and (max-width: 1200px) {
+  .menu {
+    display: none;
+    position: absolute;
+    right: 8rem;
+    top: 5rem;
+    z-index: 5;
+    padding: 0;
+  }
+
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: var(--gray-20) 0.5px solid;
+    background-color: var(--gray-5);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .topnav a {
+    padding: 10px;
+  }
+  .topnav a:hover {
+    background-color: var(--light-orange);
+    color: var(--orange);
+    transform: scale(1.05);
+    transition: 100ms;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+
+  .open {
+    display: block;
+  }
+}
+
+/*laptop*/
+@media (min-width: 1000px) and (max-width: 1280px) {
   header {
     display: grid;
     grid-template-columns: 1fr 4fr 0.5fr;
@@ -381,4 +494,16 @@ footer {
   nav {
     padding: 0 2rem;
   }
+}
+
+/*small laptop screens*/
+@media (min-width: 769px) and (max-width: 999px) {
+}
+
+/*Tablet and larger smartphone*/
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+/*small device*/
+@media (max-width: 480px) {
 }
