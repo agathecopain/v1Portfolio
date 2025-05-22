@@ -1,68 +1,108 @@
 [
   {
+    "id": 1,
     "titre": "Bac Scientifique",
-    "entreprise": "Lycée Hilaire de Chardonnet",
-    "dates": "Juin 2014",
-    "lieu": "Chalon-sur-Saône",
+    "entreprise": "Lycée Hilaire",
+    "dates": "2014",
+    "dateStart": 2013,
+    "lieu": "Chalon/Saône",
     "mission": "",
-    "type": "",
+    "type": "bac",
     "statut": "Formation",
-    "secteur": "scientifique"
+    "secteur": "scientifique",
+    "like": "Les cours de physique-chimie",
+    "summary": "Bac scientifique spé maths"
   },
   {
-    "titre": "Classe préparatoire économique option scientifique (ECS)",
+    "id": 2,
+    "titre": "Classe préparatoire ECS",
     "entreprise": "Lycée du Parc",
-    "dates": "Septembre 2014 à Juin 2016",
+    "dates": "2014-2016",
+    "dateStart": 2014,
     "lieu": "Lyon",
     "mission": "",
     "type": "bac+2",
     "statut": "Formation",
-    "secteur": "scientifique"
+    "secteur": "scientifique",
+    "like": "Les cours de philosophie et d'anglais",
+    "summary": "Préparation scientifique aux concours d'école de commerce"
   },
   {
-    "titre": "Programme Grande École",
+    "id": 3,
+    "titre": "Management",
     "entreprise": "TBS Education",
-    "dates": "Septembre 2016 à Juin 2020",
+    "dates": "2016-2017",
+    "dateStart": 2016,
     "lieu": "Toulouse",
-    "mission": "-",
-    "type": "master",
+    "mission": "",
+    "type": "licence",
     "statut": "Formation",
-    "secteur": "Management, Finance, Marketing, Culture"
+    "secteur": "Management",
+    "like": "",
+    "summary": "Formation généraliste en école de commerce."
   },
   {
-    "titre": "Master 1 Finance",
+    "id": 4,
+    "titre": "Finance",
     "entreprise": "TBS Education",
     "dates": "2017-2018",
+    "dateStart": 2017,
     "lieu": "Toulouse",
     "mission": "-",
-    "type": "Master 1",
+    "type": "master 1",
     "statut": "Formation",
-    "secteur": "Finance"
+    "secteur": "Finance",
+    "like": "",
+    "summary": "Analyse financière, gestion des risques et marchés financiers."
   },
   {
-    "titre": "Master 2 Management des Activités Culturelles et Créatives",
+    "id": 5,
+    "titre": "Management des Activités Culturelles",
     "entreprise": "TBS Education",
     "dates": "2019-2020",
+    "dateStart": 2019,
     "lieu": "Toulouse",
     "mission": "-",
-    "type": "Master 2",
+    "type": "master 2",
     "statut": "Formation",
-    "secteur": "Culture, Management"
+    "secteur": "Culture, Management",
+    "like": "",
+    "summary": ""
   },
   {
+    "id": 6,
     "titre": "Échange universitaire",
-    "entreprise": "University of Amsterdam",
+    "entreprise": "UvA",
     "dates": "2019",
+    "dateStart": 2019,
     "lieu": "Amsterdam",
     "mission": "-",
-    "type": "MSc",
+    "type": "msc",
     "statut": "Formation",
-    "secteur": "Culture, Développement Durable"
+    "secteur": "Culture, Développement Durable",
+    "like": "",
+    "summary": ""
   },
   {
+    "id": 7,
+    "titre": "TP développeur web et web mobile",
+    "entreprise": "Afec",
+    "dates": "2025",
+    "dateStart": 2025,
+    "lieu": "Bayonne",
+    "mission": "-",
+    "type": "bac+2",
+    "statut": "Formation",
+    "secteur": "Développement web, numérique",
+    "like": "",
+    "summary": "Formation professionnelle en développement web"
+  },
+  {
+    "id": 8,
     "titre": "Responsable du pôle activations publicitaires",
     "entreprise": "SensCritique",
-    "dates": "2023 à 2024",
+    "dates": "2023-2024",
+    "dateStart": 2023,
     "lieu": "Paris",
     "mission": [
       "Création d’un pôle activations publicitaires et définition des objectifs du pôle",
@@ -70,14 +110,18 @@
       "Conception et implémentation de nouveaux processus de gestion",
       "Formation et management de l’équipe"
     ],
-    "type": "CDI",
+    "type": "cdi",
     "statut": "Expérience professionnelle",
-    "secteur": "Publicité digitale"
+    "secteur": "Publicité digitale",
+    "like": "",
+    "summary": ""
   },
   {
+    "id": 9,
     "titre": "Coordinatrice des activations publicitaires",
     "entreprise": "SensCritique",
-    "dates": "2021 à 2023",
+    "dates": "2021-2023",
+    "dateStart": 2021,
     "lieu": "Paris",
     "mission": [
       "Gestion des campagnes publicitaires digitales et sociales (nombre de campagnes multiplié par 3)",
@@ -85,14 +129,18 @@
       "Organisation d'avant-premières et projections spéciales (6 événements/an)",
       "Coordination de la production des contenus vidéo"
     ],
-    "type": "CDI",
+    "type": "cdi",
     "statut": "Expérience professionnelle",
-    "secteur": "Publicité digitale"
+    "secteur": "Publicité digitale",
+    "like": "",
+    "summary": ""
   },
   {
+    "id": 10,
     "titre": "Responsable digital et licences internationales",
     "entreprise": "IDEAT Édition",
     "dates": "2021",
+    "dateStart": 2021,
     "lieu": "Paris",
     "mission": [
       "Pilotage des productions digitales, suivi des KPIs et reporting client",
@@ -100,14 +148,18 @@
       "Suivi du CA, des marges et management d’un·e alternant·e",
       "Gestion des contenus des licences internationales des magazines"
     ],
-    "type": "CDD",
+    "type": "cdd",
     "statut": "Expérience professionnelle",
-    "secteur": "Médias, Digital"
+    "secteur": "Médias, Digital",
+    "like": "",
+    "summary": ""
   },
   {
+    "id": 11,
     "titre": "Assistante responsable partenariats culture et médias",
     "entreprise": "mk2 agency",
-    "dates": "Juillet 2018 à Décembre 2018",
+    "dates": "2018",
+    "dateStart": 2018,
     "lieu": "Paris",
     "mission": [
       "Prospection et rendez-vous clients avec les musées, fondations, labels, éditeurs, arts vivants, etc.",
@@ -117,12 +169,16 @@
     ],
     "type": "stage",
     "statut": "Expérience professionnelle",
-    "secteur": "Publicité, Culture"
+    "secteur": "Publicité, Culture",
+    "like": "",
+    "summary": ""
   },
   {
+    "id": 12,
     "titre": "Assistante responsable partenariats culture et médias",
     "entreprise": "mk2 agency",
-    "dates": "Janvier 2019",
+    "dates": "2019",
+    "dateStart": 2019,
     "lieu": "Paris",
     "mission": [
       "Prospection et rendez-vous clients avec les musées, fondations, labels, éditeurs, arts vivants, etc.",
@@ -130,14 +186,18 @@
       "Conception et gestion d’opérations spéciales comme des masterclass carte blanche",
       "Reporting financier et suivi comptable (facturation) et juridique (relecture des conventions)"
     ],
-    "type": "CDD",
+    "type": "cdd",
     "statut": "Expérience professionnelle",
-    "secteur": "Publicité, Culture"
+    "secteur": "Publicité, Culture",
+    "like": "",
+    "summary": ""
   },
   {
+    "id": 13,
     "titre": "Cheffe de publicité",
     "entreprise": "fisheye",
-    "dates": "Janvier à Juin 2020",
+    "dates": "2020",
+    "dateStart": 2020,
     "lieu": "Paris",
     "mission": [
       "Création d’offres publicitaires et rédaction de recommandations commerciales",
@@ -147,6 +207,8 @@
     ],
     "type": "stage",
     "statut": "Expérience professionnelle",
-    "secteur": "Publicité, Médias"
+    "secteur": "Publicité, Médias",
+    "like": "",
+    "summary": "Conception et gestion des campagnes de pub"
   }
 ]

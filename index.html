@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chicle&family=Poetsen+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -179,27 +183,30 @@
         <div class="main-section">
           <div class="hero" id="hero">
             <div class="about" id="about">
-              <h1>Hello je m'appelle <span>Agathe</span>.</h1>
+              <h1>Hello je m'appelle <span class="focus">Agathe</span>.</h1>
               <p>
-                Je suis <span>développeuse fullstack</span> en formation et
-                j'habite à <span>Anglet</span>. Avant, j’ai travaillé cinq ans
-                dans le secteur culturel, notamment chez
-                <span>SensCritique</span> où j’ai commencé à m’intéresser au
-                web. En m’installant au <span>Pays Basque</span>, je me suis
-                lancée dans une <span>reconversion</span> professionnelle.
-                J’adore apprendre et créer - récemment sur le <span>web</span>,
-                et avant cela en <span>bricolant, cousant ou jardinant</span>.
-                J’aime le <span>cinéma</span> et les vide-greniers. Le week-end,
-                je pars en
-                <span>randonnée <img src="assets/rando.jpg" alt="" /></span>, je
-                joue un peu au <span>foot</span> et j’apprends à
-                <span>surfer</span>.
+                Je suis <span class="focus">développeuse fullstack</span> en
+                formation et j'habite à <span class="focus">Anglet</span>.
+                Avant, j’ai travaillé cinq ans dans le secteur culturel,
+                notamment chez <span class="focus">SensCritique</span> où j’ai
+                commencé à m’intéresser au web. En m’installant au
+                <span class="focus">Pays Basque</span>, je me suis lancée dans
+                une <span class="focus">reconversion</span> professionnelle.
+                J’adore apprendre et créer - récemment sur le
+                <span class="focus">web</span>, et avant cela en
+                <span class="focus">bricolant, cousant ou jardinant</span>.
+                J’aime le <span class="focus">cinéma</span> et les
+                vide-greniers. Le week-end, je pars en
+                <span class="focus"
+                  >randonnée <img src="assets/rando.jpg" alt="" /></span
+                >, je joue un peu au <span class="focus">foot</span> et
+                j’apprends à <span class="focus">surfer</span>.
               </p>
             </div>
           </div>
           <div id="skills" class="skills-section">
             <div class="title-container">
-              <h2><span> ⋆⋅☆⋅⋆ ── </span>Compétences<span> ── ⋆⋅☆⋅⋆ </span></h2>
+              <h2><span> ⋆.˚✮ ── </span>Compétences<span> ── ✮˚.⋆ </span></h2>
             </div>
             <div class="skills-wrapper">
               <div class="skills-filter" id="skills-btn">
@@ -218,11 +225,15 @@
           </div>
           <div class="experiences-section" id="experience">
             <div class="title-container">
-              <h2>
-                <span> ⋆⋅☆⋅⋆ ── </span>Mon parcours<span> ── ⋆⋅☆⋅⋆ </span>
-              </h2>
+              <h2><span> ⋆.˚✮ ── </span>Mon parcours<span> ── ✮˚.⋆</span></h2>
             </div>
-            <div id="experiences-container"></div>
+            <div id="experiences-container" class="experiences-container"></div>
+          </div>
+          <div class="modal-container">
+            <div class="overlay modal-trigger"></div>
+            <!-- <div class="modal" role="dialog">
+              <button class="close-modal modal-trigger">x</button>
+            </div> -->
           </div>
         </div>
       </div>
