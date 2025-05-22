@@ -467,6 +467,7 @@ main {
 .experience-card {
   display: flex;
   flex-direction: column;
+  position: relative;
   background-color: var(--bg-white);
   border-radius: 1rem;
   padding: 0;
@@ -537,11 +538,24 @@ p {
   font-size: 0.8rem;
 }
 
+.like p {
+  padding: 0 25px 0 0;
+}
+
 /* Modale
 ------------------------------------------------------------------------*/
 .modal-btn {
   cursor: pointer;
-  display: block;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 5px;
+  right: 5px;
 }
 
 .modal-container {
@@ -578,6 +592,7 @@ p {
   max-width: 500px;
   min-width: 300px;
   padding: 30px;
+  box-sizing: border-box;
   background-color: var(--gray-5);
   border-radius: 1rem;
   position: absolute;
@@ -598,16 +613,17 @@ p {
 }
 
 .close-modal {
-  padding: 4px 5px;
+  padding: 0;
   border: none;
-  border-radius: 50%;
+  font-family: "Space Mono", monospace;
   font-size: 1rem;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   cursor: pointer;
-  background-color: var(--pink);
-  color: var(--bleu-gris);
+  background-color: inherit;
+  box-sizing: border-box;
+  color: inherit;
 }
 
 /* Footer
@@ -745,12 +761,99 @@ footer {
 
 /*small laptop screens*/
 @media (min-width: 769px) and (max-width: 999px) {
+  /*about*/
 }
 
 /*Tablet and larger smartphone*/
 @media (min-width: 481px) and (max-width: 768px) {
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .experiences-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /*small device*/
 @media (max-width: 480px) {
+  header {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 0rem;
+    padding: 1rem;
+  }
+
+  .header-right {
+    gap: 1rem;
+  }
+  .about h1 {
+    font-size: 1.25rem;
+  }
+  .about h1 span {
+    font-size: 1.25rem;
+  }
+  .about p {
+    font-size: 1.25rem;
+  }
+
+  .about p span {
+    font-size: 1.25rem;
+  }
+
+  .hero {
+    margin: 1rem;
+  }
+
+  .about p {
+    width: 95%;
+  }
+
+  .skills-section {
+    margin: 1rem;
+  }
+  .title-container {
+    padding: 0;
+  }
+
+  .skills-filter {
+    gap: 1rem;
+  }
+
+  .skills-filter .btn {
+    font-size: 12px;
+  }
+
+  .skills-wrapper {
+    padding: 14px;
+    margin: 0rem;
+  }
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .skills-container div {
+    width: 100%;
+  }
+
+  .experiences-section {
+    margin: 1rem;
+  }
+  .experiences-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0 0rem;
+  }
+  .experience-card {
+    width: 100%;
+  }
+
+  .modal {
+    min-width: none;
+    padding: 20px;
+  }
 }

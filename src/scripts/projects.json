@@ -1,0 +1,53 @@
+[
+    {
+      "titre": "Twilight Travel",
+      "description": "Site vitrine pour une agence de voyage fictive, avec formulaire de contact et pages destinations.",
+      "technos": ["HTML", "CSS", "JavaScript"],
+      "image": "/images/twilight-travel.png",
+      "lienDemo": "",
+      "lienCode": "",
+      "annee": 2025,
+      "type": "projet formation"
+    },
+    {
+      "titre": "Association de quartier",
+      "description": "Site pour une association avec gestion des adhésions, formulaire d'inscription et base de données.",
+      "technos": ["PHP", "MySQL", "HTML", "CSS"],
+      "image": "/images/asso-quartier.png",
+      "lienDemo": "",
+      "lienCode": "",
+      "annee": 2025,
+      "type": "projet formation"
+    },
+    {
+      "titre": "Site de recettes",
+      "description": "Blog de recettes réalisé avec WordPress. Personnalisation du thème et configuration des plugins.",
+      "technos": ["WordPress", "PHP", "CSS"],
+      "image": "/images/recettes.png",
+      "lienDemo": "",
+      "lienCode": "",
+      "annee": 2025,
+      "type": "projet formation"
+    },
+    {
+      "titre": "Jeu Canvas",
+      "description": "Petit jeu interactif en JavaScript utilisant l’élément canvas.",
+      "technos": ["JavaScript", "Canvas API", "HTML", "CSS"],
+      "image": "/images/jeu-canvas.png",
+      "lienDemo": "",
+      "lienCode": "",
+      "annee": 2025,
+      "type": "projet formation"
+    },
+    {
+      "titre": "Portfolio personnel",
+      "description": "Mon portfolio pour présenter mes projets et compétences. Responsive design et animations.",
+      "technos": ["HTML", "CSS", "JavaScript"],
+      "image": "/images/portfolio.png",
+      "lienDemo": "https://tonportfolio.com",
+      "lienCode": "",
+      "annee": 2025,
+      "type": "projet formation"
+    }
+  ]
+  

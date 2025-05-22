@@ -163,21 +163,24 @@ function generateExperiences(experiences) {
     const divExperiences = document.createElement(`div`);
     divExperiences.classList.add(`experience-card`);
     divExperiences.innerHTML = `
-    <p class="dateXp">${experience.dates}</p>
-    <div class="titleXp">
+  <p class="dateXp">${experience.dates}</p>
+  <div class="titleXp">
     <h3>${experience.titre}</h3>
-<p>${experience.type} · ${experience.entreprise}</p>
+    <p>${experience.type} · ${experience.entreprise}</p>
 </div>
 <div class="brefXp">
 <div class="summary">
 <svg xmlns="http://www.w3.org/2000/svg" width="14px" height="14px" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+<path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
 </svg>
-<p>${experience.summary}</p></div>
-<div class="like"><span>🩷</span>
-  <p>${experience.like}</p><div>
-  <button class="modal-btn modal-trigger" data-id="${experience.id}">+</button>
+<p>${experience.summary}</p>
 </div>
+<div class="like">
+<span>🩷</span>
+<p>${experience.like}</p>
+</div>
+</div>
+<button class="modal-btn modal-trigger" data-id="${experience.id}">(+)</button>
     `;
     containerExperiences.appendChild(divExperiences);
   });
@@ -193,7 +196,7 @@ function generateModal(experiences) {
     //on ajoute l'attribut data-id et sa valeur : id à toutes les modales
     modal.setAttribute("data-id", experience.id);
     modal.innerHTML = `
-    <button class="close-modal modal-trigger">x</button>
+    <button class="close-modal modal-trigger">(×)</button>
     <div>
       <p>${experience.dates}</p>
       <p>${experience.entreprise}</p>
@@ -235,4 +238,3 @@ function generateModal(experiences) {
     }
   }
 }
-
