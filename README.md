@@ -17,10 +17,10 @@ Mon objectif est d’utiliser ce travail comme base pour mon futur portfolio et 
 
 ## 🧱 Structure du projet
 
-/
-├── index.html
-├── style.css 
-├── script.js
+/  
+├── index.html  
+├── style.css  
+├── script.js  
 
 ## 🛠️ Technologies utilisées
 
