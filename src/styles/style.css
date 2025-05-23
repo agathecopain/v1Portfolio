@@ -20,6 +20,7 @@
   --bleu: rgba(172, 228, 243, 0.4);
   --pink: rgba(243, 172, 192, 1);
   --bleu-gris: #2c3e50;
+  --bleu-overlay: #2c3e50d3;
   --vert-mint: #b9f8c8;
   --bg-white: rgba(255, 255, 255, 0.6);
   --bleu-dark: #5263ff;
@@ -334,7 +335,7 @@ main {
   border-radius: 32px;
   background-color: inherit;
   color: inherit;
-  padding: 0.4rem 0.7rem;
+  padding: 0.2rem 0.5rem;
   font-family: "Wotfard", sans-serif;
   font-size: 1rem;
   font-weight: 500;
@@ -369,18 +370,18 @@ main {
 }
 
 .dark .btn:hover {
-  background-color: var(--vert-mint);
-  color: var(--pink-dark);
+  background-color: var(--bleu-dark);
+  color: var(--bleu-pastel);
 }
 
 .drak .activeBtn:hover {
-  background-color: var(--vert-mint);
-  color: var(--pink-dark);
+  background-color: var(--bleu-dark);
+  color: var(--bleu-pastel);
 }
 
 .dark .activeBtn {
-  background-color: var(--vert-mint);
-  color: var(--pink-dark);
+  background-color: var(--bleu-dark);
+  color: var(--bleu-pastel);
 }
 
 /*Organisation des skills*/
@@ -576,7 +577,7 @@ p {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-color: #333333d3;
+  background-color: var(--bleu-overlay);
   transition: opacity 0.4s 0.2s ease-out;
 }
 
@@ -624,6 +625,14 @@ p {
   background-color: inherit;
   box-sizing: border-box;
   color: inherit;
+}
+
+.dark .overlay {
+  background-color: #333333d3;
+}
+
+.dark .modal {
+  background-color: var(--bg-dark);
 }
 
 /* Footer
@@ -742,6 +751,21 @@ footer {
   .open {
     display: block;
   }
+
+  .dark .topnav {
+    background-color: var(--bg-dark);
+    border: var(--bleu-gris) 0.5px solid;
+  }
+
+  .dark .menu-burger {
+    background-color: var(--bleu-pastel);
+    color: var(--bleu-gris);
+  }
+
+  .dark .topnav a:hover {
+    background-color: var(--bleu-pastel);
+    color: var(--bleu-dark);
+  }
 }
 
 /*laptop*/
@@ -786,8 +810,17 @@ footer {
     padding: 1rem;
   }
 
+  header h2 {
+    font-size: 1.75rem;
+  }
+
   .header-right {
     gap: 1rem;
+  }
+
+  .menu {
+    right: 2rem;
+    top: 5rem;
   }
   .about h1 {
     font-size: 1.25rem;
@@ -811,6 +844,10 @@ footer {
     width: 95%;
   }
 
+  .title-container h2 {
+    font-size: 1.25rem;
+  }
+
   .skills-section {
     margin: 1rem;
   }
@@ -823,7 +860,7 @@ footer {
   }
 
   .skills-filter .btn {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .skills-wrapper {
@@ -839,6 +876,19 @@ footer {
     width: 100%;
   }
 
+  .skills-container h3,
+  .titleXp h3,
+  .experience-card p {
+    font-size: 0.875rem;
+  }
+  .skills-container h3 svg {
+    width: 20px;
+    height: 20px;
+  }
+  #skills-container.skills-container div p {
+    font-size: 0.75rem;
+  }
+
   .experiences-section {
     margin: 1rem;
   }
@@ -850,6 +900,12 @@ footer {
   }
   .experience-card {
     width: 100%;
+  }
+
+  .titleXp p,
+  .summary p,
+  .like p {
+    font-size: 0.75rem;
   }
 
   .modal {
