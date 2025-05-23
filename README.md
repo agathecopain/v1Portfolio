@@ -1,4 +1,4 @@
-# 🧑‍💻 Portfolio Responsive – Agathe Boncompain
+# Portfolio Responsive – Agathe Boncompain
 
 Ce dépôt contient mon portfolio personnel responsive, réalisé dans le cadre de la validation du CCP1 de mon titre professionnel Développeuse Web et Web Mobile.
 Mon objectif est d’utiliser ce travail comme base pour mon futur portfolio et de migrer ce projet vers Vite + React.
