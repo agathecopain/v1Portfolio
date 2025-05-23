@@ -238,3 +238,9 @@ function generateModal(experiences) {
     }
   }
 }
+
+//Contact btn flip-------------------------------------------------------------
+const contactBtn = document.getElementById(`contact`);
+contactBtn.addEventListener("click", () => {
+  contactBtn.classList.toggle(`flip`);
+});
