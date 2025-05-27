@@ -10,7 +10,7 @@
     "type": "bac",
     "statut": "Formation",
     "secteur": "scientifique",
-    "like": "Les cours de physique-chimie",
+    "like": "Physique-chimie",
     "summary": "Bac scientifique spé maths"
   },
   {
@@ -24,7 +24,7 @@
     "type": "bac+2",
     "statut": "Formation",
     "secteur": "scientifique",
-    "like": "Cours de philosophie & d'anglais",
+    "like": "Philosophie & anglais",
     "summary": "Préparation scientifique aux concours d'école de commerce"
   },
   {

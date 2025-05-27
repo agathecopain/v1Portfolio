@@ -342,6 +342,7 @@ main {
   font-weight: 500;
   margin: 0;
   cursor: pointer;
+  transition: transform 100ms;
 }
 /*hover btn*/
 .btn:hover {
@@ -349,16 +350,12 @@ main {
   background-color: var(--vert);
   border: none;
   transform: scale(1.1);
-  transition: 100ms;
-  font-weight: bold;
 }
 /*click btn*/
-.activeBtn,
-.activeBtn:hover {
+.activeBtn {
   color: var(--bleu-gris);
   background-color: var(--vert);
   border: none;
-  /*border: 1px solid var(--orange);*/
 }
 
 /*dark mode*/
@@ -424,7 +421,7 @@ main {
 ------------------------------------------------------------------------*/
 .experiences-section {
   margin: 0 6rem 3rem;
-  scroll-margin-top: 8rem;
+  scroll-margin-top: 3rem;
   display: flex;
   flex-direction: column;
 }
@@ -445,7 +442,7 @@ main {
   grid-template-columns: 1fr max-content 1fr;
   gap: 12px;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   padding: 0 3rem;
 }
 
@@ -459,6 +456,46 @@ main {
   height: 1px;
 }
 
+/*btn filter formation et job*/
+.experiences-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 6px;
+  padding: 0 0 0 3.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.xp-btn {
+  color: inherit;
+  background-color: inherit;
+  padding: 0.15rem 0.4rem;
+  font-family: "Wotfard", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+  cursor: pointer;
+  border: 1px solid var(--pink);
+  border-radius: 4px;
+}
+
+.xp-btn:hover,
+.active-xpBtn {
+  color: var(--gray-5);
+  background-color: var(--violet-dark);
+  border: 1px solid transparent;
+  transform: scale(1.05);
+  transition: transform 100ms;
+}
+
+.active-xpBtn {
+  color: var(--gray-5);
+  background-color: var(--violet-dark);
+  border: 1px solid transparent;
+}
+
+/*container card xp*/
 .experiences-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -496,7 +533,7 @@ main {
   color: var(--bleu-gris);
 }
 
-/*---------------------------------------*/
+/*xp cards---------------------------------------*/
 
 .titleXp {
   padding: 10px;
@@ -567,6 +604,7 @@ p {
   width: 100vw;
   height: 100vh;
   transition: visibility 0.4s;
+  z-index: 10;
 }
 
 .modal-container.active {
@@ -976,6 +1014,16 @@ footer {
   .experiences-section {
     margin: 1rem;
   }
+
+  .experiences-filter {
+    justify-content: flex-start;
+    padding: 0 0 0 0.2rem;
+  }
+
+  .xp-btn {
+    font-size: 14px;
+  }
+
   .experiences-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
