@@ -80,6 +80,7 @@ const skillsMarketingBtn = document.getElementById(`skills-marketing-btn`);
 fetch(`src/scripts/skills.json`)
   .then((response) => response.json())
   .then((skills) => {
+    //Affichage par défaut
     const defaultSkills = skills.filter((e) =>
       e.categorie.includes(`Développement web`)
     );
@@ -87,6 +88,8 @@ fetch(`src/scripts/skills.json`)
     skillsWebBtn.classList.add("activeBtn");
     skillsProjectBtn.classList.remove("activeBtn");
     skillsMarketingBtn.classList.remove("activeBtn");
+
+    //Affichage des skills dev web en cliquant
     skillsWebBtn.addEventListener("click", () => {
       const filteredSkillsDevWeb = skills.filter((e) =>
         e.categorie.includes(`Développement web`)
@@ -96,6 +99,8 @@ fetch(`src/scripts/skills.json`)
       skillsProjectBtn.classList.remove("activeBtn");
       skillsMarketingBtn.classList.remove("activeBtn");
     });
+
+    //Affichage des skills gestion de projet en cliquant
     skillsProjectBtn.addEventListener("click", () => {
       const filteredSkillsPM = skills.filter((e) =>
         e.categorie.includes(`Gestion de projet`)
@@ -105,6 +110,8 @@ fetch(`src/scripts/skills.json`)
       skillsWebBtn.classList.remove("activeBtn");
       skillsMarketingBtn.classList.remove("activeBtn");
     });
+
+    //Affichage des skills market digital en cliquant
     skillsMarketingBtn.addEventListener("click", () => {
       const filteredSkillsMarket = skills.filter((e) =>
         e.categorie.includes(`Marketing digital`)
@@ -118,8 +125,6 @@ fetch(`src/scripts/skills.json`)
   .catch((error) => {
     console.error(error);
   });
-
-//hover des boutons
 
 //fonction pour injecter les skills
 const containerSkills = document.getElementById(`skills-container`);
@@ -135,12 +140,42 @@ function generateSkills(el) {
   });
 }
 
-//intégration expériences
+//intégration expériences------------------------------------------------------
+
+//on récupère les boutons formation et job
+const formationBtn = document.querySelector(`.formation-btn`);
+const jobBtn = document.querySelector(`.job-btn`);
+
 fetch(`src/scripts/experiences.json`)
   .then((response) => response.json())
   .then((data) => {
-    generateExperiences(data);
+    const defaultExperiences = data.filter((e) =>
+      e.statut.includes(`Formation`)
+    );
+    generateExperiences(defaultExperiences);
+    formationBtn.classList.add("active-xpBtn");
+    jobBtn.classList.remove("active-xpBtn");
     generateModal(data);
+
+    //Affichage des formations en cliquant
+    formationBtn.addEventListener("click", () => {
+      const formations = data.filter((e) => e.statut.includes(`Formation`));
+      generateExperiences(formations);
+      formationBtn.classList.add("active-xpBtn");
+      jobBtn.classList.remove("active-xpBtn");
+      generateModal(data);
+    });
+
+    //Affichage des jobs en cliquant
+    jobBtn.addEventListener("click", () => {
+      const jobs = data.filter((e) =>
+        e.statut.includes(`Expérience professionnelle`)
+      );
+      generateExperiences(jobs);
+      jobBtn.classList.add("active-xpBtn");
+      formationBtn.classList.remove("active-xpBtn");
+      generateModal(data);
+    });
   })
   .catch((error) => {
     console.error(error);
@@ -148,6 +183,7 @@ fetch(`src/scripts/experiences.json`)
 
 const containerExperiences = document.getElementById(`experiences-container`);
 function generateExperiences(experiences) {
+  containerExperiences.innerHTML = "";
   function compare(a, b) {
     if (a.dateStart > b.dateStart) {
       return -1;
@@ -186,10 +222,14 @@ function generateExperiences(experiences) {
   });
 }
 
-//Affichage modal---------------------------------------------------
-function generateModal(experiences) {
-  const modalContainer = document.querySelector(".modal-container");
+//Affichage modal--------------------------------------------------------------
+const modalContainer = document.querySelector(".modal-container");
 
+function generateModal(experiences) {
+  modalContainer.innerHTML = "";
+  const overlay = document.createElement("div");
+  overlay.classList.add("overlay", "modal-trigger");
+  modalContainer.appendChild(overlay);
   experiences.forEach((experience) => {
     const modal = document.createElement(`div`);
     modal.classList.add("modal");
@@ -211,7 +251,7 @@ function generateModal(experiences) {
   });
 
   const modalTriggers = document.querySelectorAll(".modal-trigger"); //modalTriggers est un tableau contenant les boutons d'activation des modales
-  console.log(modalTriggers);
+  console.log(`modal triggers`, modalTriggers);
 
   modalTriggers.forEach((trigger) => {
     trigger.addEventListener("click", () => {
@@ -226,6 +266,7 @@ function generateModal(experiences) {
     //on rend la modale visible
     modalContainer.classList.toggle("active");
     //on récupère un tableau de modales et on leur enlève la classe active
+    console.log(document.querySelectorAll(".modal"));
     document.querySelectorAll(".modal").forEach((modal) => {
       modal.classList.remove("active");
     });
