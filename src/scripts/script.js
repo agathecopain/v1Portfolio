@@ -134,7 +134,6 @@ function generateSkills(el) {
     const divSkills = document.createElement(`div`);
     divSkills.innerHTML = `
     <h3>${skill.svg}${skill.nom}</h3>
-    <p>${skill.niveau}</p>
     <p>${skill.commentaire}</p>`;
     containerSkills.appendChild(divSkills);
   });

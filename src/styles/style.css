@@ -103,7 +103,7 @@ header {
   padding: 1rem 6rem;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   /*overflow: hidden;*/
   backdrop-filter: blur(10px);
   height: 5rem;
@@ -250,6 +250,7 @@ main {
   font-style: italic;
   font-size: 2rem;
   margin: 0;
+  position: relative;
 }
 
 .about span {
@@ -261,17 +262,30 @@ main {
   cursor: pointer;
 }
 
-.dark .focus {
+.dark .focus-txt {
   color: var(--violet-dark);
 }
 
-.about span img {
+.about img {
   display: none;
 }
 
-.about img:hover {
-  display: contents;
+.focus {
+  position: relative;
+}
+
+.focus span {
+  position: relative;
+  z-index: 1;
+}
+
+.about .focus:hover img {
+  display: block;
   position: absolute;
+  width: 200px;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 /* Skills
@@ -332,7 +346,7 @@ main {
 }
 /*design btn*/
 .btn {
-  border: none;
+  border: 1px var(--bleu-gris) solid;
   border-radius: 1rem;
   background-color: inherit;
   color: inherit;
@@ -343,19 +357,30 @@ main {
   margin: 0;
   cursor: pointer;
   transition: transform 100ms;
+  box-shadow: inset -2px -4px 0 0 #728BB1,
+    3px 5px 0 var(--bleu-gris);
 }
+
 /*hover btn*/
 .btn:hover {
   color: var(--bleu-gris);
   background-color: var(--vert);
-  border: none;
-  transform: scale(1.1);
+  border:1px solid #7F887C;
+  transform: translateY(3px);
+  box-shadow: 1px 2px 0 var(--bleu-gris);
+  transition: box-shadow 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /*click btn*/
 .activeBtn {
   color: var(--bleu-gris);
   background-color: var(--vert);
-  border: none;
+  border:1px solid #7F887C;
+  transform: translateY(3px);
+  box-shadow: 1px 2px 0 var(--bleu-gris);
+  transition: box-shadow 0.15s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*dark mode*/
@@ -364,22 +389,24 @@ main {
 }
 
 .dark .btn {
-  border: none;
+  border: solid 1px #728BB1;
+  box-shadow: inset -2px -4px 0 0 #728BB1,
+    3px 5px 0 var(--gray-80);
+
 }
 
 .dark .btn:hover {
   background-color: var(--bleu-dark);
   color: var(--bleu-pastel);
-}
-
-.drak .activeBtn:hover {
-  background-color: var(--bleu-dark);
-  color: var(--bleu-pastel);
+  box-shadow: 1px 2px 0 var(--gray-60);
+  border: 1px solid var(--gray-50)
 }
 
 .dark .activeBtn {
   background-color: var(--bleu-dark);
   color: var(--bleu-pastel);
+  box-shadow: 1px 2px 0 var(--gray-60);
+  border: 1px solid var(--gray-50)
 }
 
 /*Organisation des skills*/
@@ -1041,7 +1068,7 @@ footer {
   }
 
   .modal {
-    min-width: none;
+    min-width: unset;
     padding: 20px;
   }
 }
