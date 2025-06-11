@@ -279,14 +279,14 @@ main {
   z-index: 1;
 }
 
-.about .focus:hover img {
+/*.about .focus:hover img {
   display: block;
   position: absolute;
   width: 200px;
   top: 100%;
   left: 50%;
   transform: translate(-50%, 0%);
-}
+}*/
 
 /* Skills
 ------------------------------------------------------------------------*/
