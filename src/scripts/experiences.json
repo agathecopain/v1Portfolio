@@ -5,8 +5,16 @@
     "entreprise": "Lycée Hilaire",
     "dates": "2014",
     "dateStart": 2013,
-    "lieu": "Chalon/Saône",
-    "mission": "",
+    "lieu": "71-Chalon",
+    "mission": [
+      "Mathématiques – spécialité",
+      "Physique-Chimie",
+      "Sciences de la Vie et de la Terre",
+      "Histoire-Géographie",
+      "Philosophie",
+      "Anglais",
+      "Espagnol"
+    ],
     "type": "bac",
     "statut": "Formation",
     "secteur": "scientifique",
@@ -20,7 +28,14 @@
     "dates": "2014-2016",
     "dateStart": 2014,
     "lieu": "Lyon",
-    "mission": "",
+    "mission": [
+      "Mathématiques approfondies",
+      "Économie et Sociologie",
+      "Histoire-Géographie-Géopolitique du monde contemporain",
+      "Culture générale – Philosophie",
+      "Anglais",
+      "Espagnol"
+    ],
     "type": "bac+2",
     "statut": "Formation",
     "secteur": "scientifique",
@@ -34,7 +49,18 @@
     "dates": "2016-2017",
     "dateStart": 2016,
     "lieu": "Toulouse",
-    "mission": "",
+    "mission": [
+      "Analyser des données économiques et comptables pour éclairer les décisions",
+      "Appliquer les principes de droit des entreprises dans un contexte professionnel",
+      "Développer des stratégies de marketing et de vente adaptées aux marchés",
+      "Interpréter les données à l’aide d’outils de Business Analytics",
+      "Maîtriser les bases de la comptabilité financière",
+      "Organiser et optimiser le fonctionnement d’une équipe ou d’une organisation",
+      "Préparer et animer des négociations commerciales",
+      "Réaliser des études de développement international",
+      "S’exprimer efficacement à l’oral et à l’écrit en anglais et en espagnol dans un contexte professionnel",
+      "Traduire une problématique RSE en plan d’action opérationnel"
+    ],
     "type": "licence",
     "statut": "Formation",
     "secteur": "Management",
@@ -48,26 +74,45 @@
     "dates": "2017-2018",
     "dateStart": 2017,
     "lieu": "Toulouse",
-    "mission": "-",
+    "mission": [
+      "Analyser des états financiers pour évaluer la performance d’une entreprise",
+      "Appliquer les outils d’évaluation financière à des projets d’investissement",
+      "Construire des modèles financiers complexes sous Excel",
+      "Conduire une analyse de risques financiers et opérationnels",
+      "Définir une stratégie de financement adaptée à l’entreprise",
+      "Maîtriser les fondamentaux de la gestion d’actifs et de portefeuille",
+      "Préparer des reportings financiers à destination des parties prenantes",
+      "Utiliser des indicateurs de performance pour piloter une activité",
+      "Comprendre les mécanismes des marchés financiers"
+    ],
     "type": "master 1",
     "statut": "Formation",
     "secteur": "Finance",
-    "like": "",
+    "like": "Valorisation d'entreprises",
     "summary": "Analyse financière, gestion des risques et marchés financiers."
   },
   {
     "id": 5,
-    "titre": "Management des Activités Culturelles",
+    "titre": "Management Culturel",
     "entreprise": "TBS Education",
     "dates": "2019-2020",
     "dateStart": 2019,
     "lieu": "Toulouse",
-    "mission": "-",
+    "mission": [
+      "Piloter un projet culturel",
+      "Produire et financer un projet artistique",
+      "Conduire une stratégie Marketing et commerciale dans le secteur culturel",
+      "Maîtriser les techniques digitales et graphiques au service de la culture",
+      "Développer les publics et les ressources financières",
+      "Analyser les enjeux stratégiques des entreprises culturelles et proposer des plans d’action adaptés",
+      "Conduire et mettre en œuvre une stratégie de communication dans le secteur culturel",
+      "Appliquer des méthodes de recherche, d’analyse et de rédaction de dossiers dans le contexte du marketing culturel"
+    ],
     "type": "master 2",
     "statut": "Formation",
     "secteur": "Culture, Management",
-    "like": "",
-    "summary": ""
+    "like": "Collaboration avec un cinéma local",
+    "summary": "Spécialisation en gestion, marketing et production de projets culturels"
   },
   {
     "id": 6,
@@ -76,25 +121,40 @@
     "dates": "2019",
     "dateStart": 2019,
     "lieu": "Amsterdam",
-    "mission": "-",
+    "mission": [
+      "Entrepreneurship and Management in the Creative Industries (Business Administration)",
+      "Business Strategy and Sustainability",
+      "Managing Creativity",
+      "Sustainable Business Models"
+    ],
     "type": "msc",
     "statut": "Formation",
     "secteur": "Culture, Développement Durable",
     "like": "",
-    "summary": ""
+    "summary": "Spécialisation en entrepreneuriat, gestion créative et stratégies durables"
   },
   {
     "id": 7,
-    "titre": "TP développeur web et web mobile",
+    "titre": "TP développeur web",
     "entreprise": "Afec",
     "dates": "2025",
     "dateStart": 2025,
     "lieu": "Bayonne",
-    "mission": "-",
-    "type": "bac+2",
+    "mission": [
+      "Installer et configurer son environnement de travail en fonction du projet web ou web mobile",
+      "Maquetter des interfaces utilisateurs web ou web mobile",
+      "Réaliser des interfaces utilisateur web statique et adaptable",
+      "Développer la partie dynamique des interfaces utilisateur web ou web mobile",
+      "Réaliser une interface utilisateur avec une solution de gestion de contenu",
+      "Mettre en place des bases de données relationnelles",
+      "Développer des composants d’accès aux données SQL et NoSQL",
+      "Développer des composants métier côté serveur",
+      "Documenter le déploiement d'une application dynamique web ou web mobile"
+    ],
+    "type": "BTS/DUT",
     "statut": "Formation",
     "secteur": "Développement web, numérique",
-    "like": "",
+    "like": "Créer des sites web",
     "summary": "Formation professionnelle en développement web"
   },
   {
@@ -113,8 +173,8 @@
     "type": "cdi",
     "statut": "Expérience professionnelle",
     "secteur": "Publicité digitale",
-    "like": "",
-    "summary": ""
+    "like": "Migration du système de gestion de projet sur Notion",
+    "summary": "Management du pôle pub digitale pour une plateforme sociale culturelle"
   },
   {
     "id": 9,
@@ -124,16 +184,16 @@
     "dateStart": 2021,
     "lieu": "Paris",
     "mission": [
-      "Gestion des campagnes publicitaires digitales et sociales (nombre de campagnes multiplié par 3)",
-      "Trafic management des campagnes publicitaires (20 campagnes/mois)",
-      "Organisation d'avant-premières et projections spéciales (6 événements/an)",
-      "Coordination de la production des contenus vidéo"
+      "Gestion des campagnes publicitaires digitales et sociales - volume de campagnes multiplié par 3",
+      "Trafic management des campagnes publicitaires - 20 campagnes par mois",
+      "Organisation d'avant-premières et projections spéciales - 6 événements par an",
+      "Coordination de la production des contenus vidéo - 3 vidéos par mois"
     ],
     "type": "cdi",
     "statut": "Expérience professionnelle",
     "secteur": "Publicité digitale",
     "like": "",
-    "summary": ""
+    "summary": "Coordination de campagnes digitales pour une plateforme sociale culturelle"
   },
   {
     "id": 10,
@@ -145,18 +205,19 @@
     "mission": [
       "Pilotage des productions digitales, suivi des KPIs et reporting client",
       "Programmation de push sponsorisés sur les réseaux sociaux",
-      "Suivi du CA, des marges et management d’un·e alternant·e",
-      "Gestion des contenus des licences internationales des magazines"
+      "Mise en ligne de contenus web sous WordPress",
+      "Suivi du CA mensuel, des bénéfices et management d’une alternante",
+      "Gestion des contenus des licences internationales des magazines - Allemagne, Chine et Italie"
     ],
     "type": "cdd",
     "statut": "Expérience professionnelle",
     "secteur": "Médias, Digital",
     "like": "",
-    "summary": ""
+    "summary": "Production digitale et coordination des licences internationales"
   },
   {
     "id": 11,
-    "titre": "Assistante responsable partenariats culture et médias",
+    "titre": "Assistante partenariats culture",
     "entreprise": "mk2 agency",
     "dates": "2018",
     "dateStart": 2018,
@@ -165,32 +226,31 @@
       "Prospection et rendez-vous clients avec les musées, fondations, labels, éditeurs, arts vivants, etc.",
       "Mise en place et suivi des partenariats en salles print, digital et social",
       "Conception et gestion d’opérations spéciales comme des masterclass carte blanche",
-      "Reporting financier et suivi comptable (facturation) et juridique (relecture des conventions)"
+      "Reporting financier, suivi comptable (facturation) et juridique (relecture des conventions)"
     ],
     "type": "stage",
     "statut": "Expérience professionnelle",
     "secteur": "Publicité, Culture",
-    "like": "",
-    "summary": ""
+    "like": "Découverte du secteur culturel",
+    "summary": "Mise en place de partenariats culturels pour un réseau de cinémas"
   },
   {
     "id": 12,
-    "titre": "Assistante responsable partenariats culture et médias",
+    "titre": "Assistante partenariats culture",
     "entreprise": "mk2 agency",
     "dates": "2019",
     "dateStart": 2019,
     "lieu": "Paris",
     "mission": [
-      "Prospection et rendez-vous clients avec les musées, fondations, labels, éditeurs, arts vivants, etc.",
-      "Mise en place et suivi des partenariats en salles print, digital et social",
-      "Conception et gestion d’opérations spéciales comme des masterclass carte blanche",
-      "Reporting financier et suivi comptable (facturation) et juridique (relecture des conventions)"
+      "Gestion des rendez-vous clients et suivi opérationnel des partenariats",
+      "Reporting régulier auprès de la direction",
+      "Formation et accompagnement de la nouvelle responsable lors de son intégration"
     ],
     "type": "cdd",
     "statut": "Expérience professionnelle",
     "secteur": "Publicité, Culture",
     "like": "",
-    "summary": ""
+    "summary": "Passation et formation de la nouvelle responsable partenariats"
   },
   {
     "id": 13,
@@ -209,6 +269,6 @@
     "statut": "Expérience professionnelle",
     "secteur": "Publicité, Médias",
     "like": "",
-    "summary": "Conception et gestion des campagnes de pub"
+    "summary": "Conception et gestion des campagnes publicitaires pour un magazine photo"
   }
 ]

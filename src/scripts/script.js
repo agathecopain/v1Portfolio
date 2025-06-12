@@ -236,16 +236,27 @@ function generateModal(experiences) {
     modal.setAttribute("data-id", experience.id);
     modal.innerHTML = `
     <button class="close-modal modal-trigger">(×)</button>
-    <div>
-      <p>${experience.dates}</p>
-      <p>${experience.entreprise}</p>
-      <p>${experience.lieu}</p>
+    <div class="modal-header">
+      <p class="modal-date">${experience.dates}</p>
+      <p class="modal-entreprise">${experience.entreprise}</p>
+      <p class="modal-lieu">${experience.lieu}</p>
     </div>
-    <div>
-      <h3>${experience.titre}</h3>
-      <p>${experience.mission}</p>
+    <div class="modal-body">
+      <h3 class="modal-titre">${experience.titre}</h3>
     </div>
     `;
+    const missions = experience.mission;
+    console.log(missions);
+    const modalMission = document.createElement(`ul`);
+    modalMission.classList.add("modal-mission")
+    missions.forEach((el) => {
+      modalMission.innerHTML += `
+  <li>${el}</li>
+      `;
+      console.log(`modal-mission : `, modalMission);
+      modal.appendChild(modalMission);
+    });
+
     modalContainer.appendChild(modal);
   });
 

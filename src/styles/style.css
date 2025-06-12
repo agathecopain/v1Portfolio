@@ -357,15 +357,14 @@ main {
   margin: 0;
   cursor: pointer;
   transition: transform 100ms;
-  box-shadow: inset -2px -4px 0 0 #728BB1,
-    3px 5px 0 var(--bleu-gris);
+  box-shadow: inset -2px -4px 0 0 #728bb1, 3px 5px 0 var(--bleu-gris);
 }
 
 /*hover btn*/
 .btn:hover {
   color: var(--bleu-gris);
   background-color: var(--vert);
-  border:1px solid #7F887C;
+  border: 1px solid #7f887c;
   transform: translateY(3px);
   box-shadow: 1px 2px 0 var(--bleu-gris);
   transition: box-shadow 0.15s;
@@ -376,7 +375,7 @@ main {
 .activeBtn {
   color: var(--bleu-gris);
   background-color: var(--vert);
-  border:1px solid #7F887C;
+  border: 1px solid #7f887c;
   transform: translateY(3px);
   box-shadow: 1px 2px 0 var(--bleu-gris);
   transition: box-shadow 0.15s;
@@ -389,24 +388,22 @@ main {
 }
 
 .dark .btn {
-  border: solid 1px #728BB1;
-  box-shadow: inset -2px -4px 0 0 #728BB1,
-    3px 5px 0 var(--gray-80);
-
+  border: solid 1px #728bb1;
+  box-shadow: inset -2px -4px 0 0 #728bb1, 3px 5px 0 var(--gray-80);
 }
 
 .dark .btn:hover {
   background-color: var(--bleu-dark);
   color: var(--bleu-pastel);
   box-shadow: 1px 2px 0 var(--gray-60);
-  border: 1px solid var(--gray-50)
+  border: 1px solid var(--gray-50);
 }
 
 .dark .activeBtn {
   background-color: var(--bleu-dark);
   color: var(--bleu-pastel);
   box-shadow: 1px 2px 0 var(--gray-60);
-  border: 1px solid var(--gray-50)
+  border: 1px solid var(--gray-50);
 }
 
 /*Organisation des skills*/
@@ -663,7 +660,7 @@ p {
   background-color: var(--gray-5);
   border-radius: 1rem;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, calc(-50% + 50px));
   transition: opacity 0.4s ease-out, transform 0.4s ease-out;
@@ -701,6 +698,30 @@ p {
   background-color: var(--bg-dark);
 }
 
+/*Modal content design*/
+.modal-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+  padding-bottom: 10px;
+  border-bottom: dashed 1px var(--bleu-gris);
+}
+
+.modal-titre {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.modal-mission {
+  padding-left: 12px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 /* Footer
 ------------------------------------------------------------------------*/
 footer {
@@ -709,10 +730,9 @@ footer {
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
-  background-image: linear-gradient(#b39cd0d3 0.5px, transparent 1px),
-    linear-gradient(to right, #b39cd0d3 1px, transparent 1px);
+  background-image: linear-gradient(#cececed3 0.5px, transparent 1px),
+    linear-gradient(to right, #cececed3 1px, transparent 1px);
   background-size: 25px 25px;
-  background-color: var(--gray-20);
   padding-top: 10px;
   padding-bottom: 10px;
 }
