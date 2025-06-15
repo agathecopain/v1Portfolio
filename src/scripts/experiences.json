@@ -7,8 +7,8 @@
     "dateStart": 2013,
     "lieu": "71-Chalon",
     "mission": [
-      "Mathématiques – spécialité",
-      "Physique-Chimie",
+      "Mathématiques – spé maths",
+      "Physique-chimie",
       "Sciences de la Vie et de la Terre",
       "Histoire-Géographie",
       "Philosophie",
@@ -40,7 +40,7 @@
     "statut": "Formation",
     "secteur": "scientifique",
     "like": "Philosophie & anglais",
-    "summary": "Préparation scientifique aux concours d'école de commerce"
+    "summary": "Préparation scientifique aux concours d'écoles de commerce"
   },
   {
     "id": 3,
@@ -64,7 +64,7 @@
     "type": "licence",
     "statut": "Formation",
     "secteur": "Management",
-    "like": "",
+    "like": "Parcours aménagé job études",
     "summary": "Formation généraliste en école de commerce."
   },
   {
@@ -101,7 +101,7 @@
     "mission": [
       "Piloter un projet culturel",
       "Produire et financer un projet artistique",
-      "Conduire une stratégie Marketing et commerciale dans le secteur culturel",
+      "Conduire une stratégie marketing et commerciale dans le secteur culturel",
       "Maîtriser les techniques digitales et graphiques au service de la culture",
       "Développer les publics et les ressources financières",
       "Analyser les enjeux stratégiques des entreprises culturelles et proposer des plans d’action adaptés",
@@ -111,7 +111,7 @@
     "type": "master 2",
     "statut": "Formation",
     "secteur": "Culture, Management",
-    "like": "Collaboration avec un cinéma local",
+    "like": "Collaboration avec un cinéma indépendant local",
     "summary": "Spécialisation en gestion, marketing et production de projets culturels"
   },
   {
@@ -127,10 +127,10 @@
       "Managing Creativity",
       "Sustainable Business Models"
     ],
-    "type": "msc",
+    "type": "MSc",
     "statut": "Formation",
     "secteur": "Culture, Développement Durable",
-    "like": "",
+    "like": "Projet de groupe pour BNNVARA (société audiovisuelle)",
     "summary": "Spécialisation en entrepreneuriat, gestion créative et stratégies durables"
   },
   {
@@ -143,7 +143,7 @@
     "mission": [
       "Installer et configurer son environnement de travail en fonction du projet web ou web mobile",
       "Maquetter des interfaces utilisateurs web ou web mobile",
-      "Réaliser des interfaces utilisateur web statique et adaptable",
+      "Réaliser des interfaces utilisateur web statiques et adaptables",
       "Développer la partie dynamique des interfaces utilisateur web ou web mobile",
       "Réaliser une interface utilisateur avec une solution de gestion de contenu",
       "Mettre en place des bases de données relationnelles",
@@ -185,14 +185,14 @@
     "lieu": "Paris",
     "mission": [
       "Gestion des campagnes publicitaires digitales et sociales - volume de campagnes multiplié par 3",
-      "Trafic management des campagnes publicitaires - 20 campagnes par mois",
+      "Traffic management des campagnes publicitaires - 20 campagnes par mois",
       "Organisation d'avant-premières et projections spéciales - 6 événements par an",
       "Coordination de la production des contenus vidéo - 3 vidéos par mois"
     ],
     "type": "cdi",
     "statut": "Expérience professionnelle",
     "secteur": "Publicité digitale",
-    "like": "",
+    "like": "Structuration du pôle pub et montée en responsabilités",
     "summary": "Coordination de campagnes digitales pour une plateforme sociale culturelle"
   },
   {
@@ -204,7 +204,7 @@
     "lieu": "Paris",
     "mission": [
       "Pilotage des productions digitales, suivi des KPIs et reporting client",
-      "Programmation de push sponsorisés sur les réseaux sociaux",
+      "Programmation de pushs sponsorisés sur les réseaux sociaux",
       "Mise en ligne de contenus web sous WordPress",
       "Suivi du CA mensuel, des bénéfices et management d’une alternante",
       "Gestion des contenus des licences internationales des magazines - Allemagne, Chine et Italie"
@@ -212,7 +212,7 @@
     "type": "cdd",
     "statut": "Expérience professionnelle",
     "secteur": "Médias, Digital",
-    "like": "",
+    "like": "Utilisation de WordPress et gestion de campagnes publicitaires Meta",
     "summary": "Production digitale et coordination des licences internationales"
   },
   {
@@ -249,7 +249,7 @@
     "type": "cdd",
     "statut": "Expérience professionnelle",
     "secteur": "Publicité, Culture",
-    "like": "",
+    "like": "Transmission des projets en cours",
     "summary": "Passation et formation de la nouvelle responsable partenariats"
   },
   {
@@ -268,7 +268,7 @@
     "type": "stage",
     "statut": "Expérience professionnelle",
     "secteur": "Publicité, Médias",
-    "like": "",
+    "like": "Analyse du business model",
     "summary": "Conception et gestion des campagnes publicitaires pour un magazine photo"
   }
 ]
