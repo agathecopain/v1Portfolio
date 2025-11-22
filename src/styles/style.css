@@ -94,6 +94,7 @@ svg.light {
   background: none;
   cursor: pointer;
 }
+
 header {
   grid-area: header;
   display: grid;
@@ -226,7 +227,6 @@ main {
   position: fixed;
   top: 40%;
   transform: translateY(-50%);
-  left: 2rem;
 }
 
 /* About
@@ -818,6 +818,10 @@ footer {
   nav {
     padding: 0 5rem;
   }
+
+  .socialmedia-bar {
+    left: 2rem;
+  }
 }
 /*menu burger-----------------------------------------------------------*/
 @media (max-width: 999px) {
@@ -946,6 +950,10 @@ footer {
   }
   nav {
     padding: 0 2rem;
+  }
+
+  .socialmedia-bar {
+    left: 2rem;
   }
 }
 
@@ -1091,4 +1099,18 @@ footer {
     min-width: unset;
     padding: 20px;
   }
+}
+
+@media (min-width: 1441px) {
+  /* Limiter et centrer le contenu du main, sauf le marquee */
+  body > main > *:not(.marquee-container) {
+    max-width: 1400px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+  }
+
+
 }
